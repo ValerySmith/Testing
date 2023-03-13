@@ -44,7 +44,7 @@ object GrpcModule {
     fun provideGrpcClient(okHttpClient: OkHttpClient): Retrofit =
         Retrofit.Builder()
             .client(okHttpClient)
-            .baseUrl("https://api.sweet.tv:443/".toHttpUrl())
+            .baseUrl(BuildConfig.API_END_POINT.toHttpUrl())
             .addConverterFactory(ProtoConverterFactory.create())
             .build()
 

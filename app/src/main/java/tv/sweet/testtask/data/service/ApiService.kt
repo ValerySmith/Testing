@@ -8,6 +8,6 @@ import tv.sweet.signup_service.SignupServiceOuterClass
 
 interface ApiService {
 
-    @POST("SetPhone")
+    @POST("/SetPhone")
     suspend fun setPhone(@Body request: SignupServiceOuterClass.SetPhoneRequest): Response<SignupServiceOuterClass.SetPhoneResponse>
 }
