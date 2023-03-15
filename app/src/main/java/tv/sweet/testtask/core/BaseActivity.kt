@@ -7,8 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 abstract class BaseActivity(
     @LayoutRes private val layoutResourceId: Int
-) : AppCompatActivity() {
-
+) : AppCompatActivity(), BaseView {
     @CallSuper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

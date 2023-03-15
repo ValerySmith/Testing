@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">SweetTestTask</string>
     <string name="send_phone">Send Your Phone </string>
+    <string name="send_code">Send Code </string>
     <string name="сontinue">Continue</string>
+    <string name="channel_tab">Channels</string>
+    <string name="genre_tab">Genres</string>
 </resources>

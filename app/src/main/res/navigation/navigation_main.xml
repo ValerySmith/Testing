@@ -6,18 +6,26 @@
     app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/hostFragment"
-        android:name="tv.sweet.testtask.presentation.host.HostFragment"
-        android:label="HostFragment"
-        tools:layout="@layout/fragment_host"/>
+        android:id="@+id/tvFragment"
+        android:name="tv.sweet.testtask.presentation.tv.TvFragment"
+        android:label="TvFragment"
+        tools:layout="@layout/fragment_tv" />
     <fragment
         android:id="@+id/loginFragment"
         android:name="tv.sweet.testtask.presentation.login.LoginFragment"
         android:label="LoginFragment"
-        tools:layout="@layout/fragment_login"
-        >
+        tools:layout="@layout/fragment_login">
         <action
-            android:id="@+id/action_loginFragment_to_hostFragment"
-            app:destination="@id/hostFragment" />
+            android:id="@+id/action_loginFragment_to_sendCodeFragment"
+            app:destination="@id/sendCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendCodeFragment"
+        android:name="tv.sweet.testtask.presentation.login.SendCodeFragment"
+        android:label="SendCodeFragment"
+        tools:layout="@layout/fragment_send_code">
+        <action
+            android:id="@+id/action_sendCodeFragment_to_hostFragment"
+            app:destination="@id/tvFragment" />
     </fragment>
 </navigation>
